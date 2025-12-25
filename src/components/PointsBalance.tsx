@@ -18,7 +18,7 @@ export const PointsBalance: React.FC<PointsBalanceProps> = ({ pointsBalance }) =
       
       <div className="flex justify-between space-x-3 mb-6">
         <p className="text-5xl font-bold text-purple-600">{pointsBalance}</p>
-        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center shadow-lg">
+        <div className="mb-10 w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center shadow-lg">
           <span className="text-2xl">⭐</span>
         </div>
       </div>
@@ -30,13 +30,13 @@ export const PointsBalance: React.FC<PointsBalanceProps> = ({ pointsBalance }) =
             {pointsBalance}/{nextRewardPoints}
           </span>
         </div>
-        <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
+        <div className="h-5 bg-gray-100 rounded-full overflow-hidden">
           <div
             className="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full transition-all duration-500 ease-out"
             style={{ width: `${progressPercent}%` }}
           />
         </div>
-        <p className="text-xs text-gray-500 flex items-center mb-25">
+        <p className="mb-5 text-xs text-gray-500 flex items-center mb-25">
           <span className="mr-1">💡</span>
           Just getting started — keep earning points!
         </p>
